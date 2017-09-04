@@ -1,4 +1,3 @@
-# fast-gitignore
+# gibo-fzf
 
-A fork of oh-my-zsh plugin, [gitignore](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/gitignore).
-
+Use gibo interactively.
