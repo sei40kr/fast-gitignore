@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# gibo-fzf
+# author: Seong Yong-ju ( @sei40kr )
+
+gibo_repo=${GIBO_BOILERPLATES:-"$HOME/.gitignore-boilerplates"}
+
+__gibo_fzf() {
+  # TODO Refactor the following routine
+  find "$gibo_repo" "${gibo_repo}/Global" -mindepth 1 -maxdepth 1 -name '*.gitignore' | \
+      xargs -i basename {} .gitignore | \
+      sort | \
+      fzf -m --preview='gibo {}' --preview-window=right | \
+      xargs gibo >.gitignore
+}
+
+__gibo_fzf
+
