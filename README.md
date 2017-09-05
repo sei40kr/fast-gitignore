@@ -2,6 +2,11 @@
 
 Use gibo interactively.
 
+## Requirements
+
+* [fzf](https://github.com/junegunn/fzf)
+* [gibo](https://github.com/simonwhitaker/gibo)
+
 ## Installation
 
 ```zsh
